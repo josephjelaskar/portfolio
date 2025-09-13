@@ -102,7 +102,7 @@ const App = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-900/50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-700">
-              <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-gray-100 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
@@ -122,7 +122,7 @@ const App = () => {
               </div>
             </div>
             <div className="bg-gray-900/50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-700">
-              <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-gray-100 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
@@ -139,7 +139,7 @@ const App = () => {
               </div>
             </div>
             <div className="bg-gray-900/50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-700">
-              <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-gray-100 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
@@ -156,7 +156,7 @@ const App = () => {
               </div>
             </div>
             <div className="bg-gray-900/50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-700">
-              <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-gray-100 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z M7 8h10 M7 12h10 M7 16h10" />
                 </svg>
@@ -172,7 +172,7 @@ const App = () => {
               </div>
             </div>
             <div className="bg-gray-900/50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-700">
-              <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-gray-100 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
@@ -188,7 +188,7 @@ const App = () => {
               </div>
             </div>
             <div className="bg-gray-900/50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-700">
-              <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-gray-100 mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -217,7 +217,7 @@ const App = () => {
             <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-gray-700">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-blue-400">Lead Software Engineer | Tech Lead</h3>
+                  <h3 className="text-2xl font-bold text-gray-50">Lead Software Engineer | Tech Lead</h3>
                   <p className="text-lg text-blue-300 font-semibold">NCS Pte Ltd, Singapore</p>
                   <p className="text-gray-400">Dec 2017 – Present</p>
                 </div>
@@ -225,7 +225,7 @@ const App = () => {
                   <span className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">Current Role</span>
                 </div>
               </div>
-              <ul className="space-y-3 text-gray-300">
+              <ul className="space-y-3 text-gray-100">
                 <li className="flex">
                   <span className="text-blue-400 mr-3">•</span>
                   <span>Led the strategic Tire Retreading product development for Bridgestone with 4 squads each consisting of about 5 team members to deliver high-performing Web, Mobile and Reporting solutions for EU and Americas</span>
@@ -264,7 +264,7 @@ const App = () => {
                 </li>
               </ul>
               <div className="mt-6">
-                <h4 className="font-semibold text-blue-300 mb-2">Key Tech Stack:</h4>
+                <h4 className="font-semibold text-blue-400 mb-2">Key Tech Stack:</h4>
                 <div className="flex flex-wrap gap-2">
                   <span className="bg-gray-700/50 px-3 py-1 rounded text-sm text-blue-300">.NET 8</span>
                   <span className="bg-gray-700/50 px-3 py-1 rounded text-sm text-blue-300">ASP.NET Core</span>
@@ -281,12 +281,12 @@ const App = () => {
             <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-gray-700">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-blue-400">Senior Software Engineer</h3>
+                  <h3 className="text-2xl font-bold text-gray-50">Senior Software Engineer</h3>
                   <p className="text-lg text-blue-300 font-semibold">Medisys Innovation, Singapore</p>
                   <p className="text-gray-400">Sep 2016 – Nov 2017</p>
                 </div>
               </div>
-              <ul className="space-y-3 text-gray-300">
+              <ul className="space-y-3 text-gray-100">
                 <li className="flex">
                   <span className="text-blue-400 mr-3">•</span>
                   <span>Contributed to all phases of the software development lifecycle, from planning through to deployment and post-release support</span>
@@ -313,7 +313,7 @@ const App = () => {
                 </li>
               </ul>
               <div className="mt-6">
-                <h4 className="font-semibold text-blue-300 mb-2">Tech Stack:</h4>
+                <h4 className="font-semibold text-blue-400 mb-2">Tech Stack:</h4>
                 <div className="flex flex-wrap gap-2">
                   <span className="bg-gray-700/50 px-3 py-1 rounded text-sm text-blue-300">C#.NET</span>
                   <span className="bg-gray-700/50 px-3 py-1 rounded text-sm text-blue-300">WPF</span>
@@ -328,12 +328,12 @@ const App = () => {
             <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-gray-700">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-blue-400">Software Consultant</h3>
+                  <h3 className="text-2xl font-bold text-gray-50">Software Consultant</h3>
                   <p className="text-lg text-blue-300 font-semibold">Capgemini India Pvt Ltd, Chennai</p>
                   <p className="text-gray-400">Jan 2014 – July 2016</p>
                 </div>
               </div>
-              <ul className="space-y-3 text-gray-300">
+              <ul className="space-y-3 text-gray-100">
                 <li className="flex">
                   <span className="text-blue-400 mr-3">•</span>
                   <span>Actively involved all phases of the software development lifecycle, from planning through to deployment and post-release support</span>
@@ -360,7 +360,7 @@ const App = () => {
                 </li>
               </ul>
               <div className="mt-6">
-                <h4 className="font-semibold text-blue-300 mb-2">Tech Stack:</h4>
+                <h4 className="font-semibold text-blue-400 mb-2">Tech Stack:</h4>
                 <div className="flex flex-wrap gap-2">
                   <span className="bg-gray-700/50 px-3 py-1 rounded text-sm text-blue-300">ASP.NET MVC</span>
                   <span className="bg-gray-700/50 px-3 py-1 rounded text-sm text-blue-300">C#.NET</span>
@@ -382,12 +382,12 @@ const App = () => {
             <div className="bg-gray-800/50 rounded-2xl p-8 shadow-lg border border-gray-700">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-blue-400">Senior Software Engineer</h3>
+                  <h3 className="text-2xl font-bold text-gray-50">Senior Software Engineer</h3>
                   <p className="text-lg text-blue-300 font-semibold">ILink MultiTech Solutions, Chennai</p>
                   <p className="text-gray-400">Nov 2010 – Dec 2013</p>
                 </div>
               </div>
-              <ul className="space-y-3 text-gray-300">
+              <ul className="space-y-3 text-gray-100">
                 <li className="flex">
                   <span className="text-blue-400 mr-3">•</span>
                   <span>Actively participated in analyzing business requirements, preparing design and database documents</span>
@@ -418,7 +418,7 @@ const App = () => {
                 </li>
               </ul>
               <div className="mt-6">
-                <h4 className="font-semibold text-blue-300 mb-2">Tech Stack:</h4>
+                <h4 className="font-semibold text-blue-400 mb-2">Tech Stack:</h4>
                 <div className="flex flex-wrap gap-2">
                   <span className="bg-gray-700/50 px-3 py-1 rounded text-sm text-blue-300">Prism</span>
                   <span className="bg-gray-700/50 px-3 py-1 rounded text-sm text-blue-300">MVVM</span>
