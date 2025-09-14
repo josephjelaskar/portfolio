@@ -1,11 +1,11 @@
-# deploy.ps1 - Deploy Vite build to gh-pages (Windows safe)
+# deploy.ps1 - Windows/PowerShell 5+ safe deploy for Vite -> gh-pages
 
 $ErrorActionPreference = "Stop"
 
 # 0) Build on main
 npm run build
 
-# 1) Prune stale worktrees and clean old folder
+# 1) Clean any stale worktree/folder
 git worktree prune
 if (Test-Path ".gh-pages") { Remove-Item -Recurse -Force ".gh-pages" }
 
@@ -13,10 +13,17 @@ if (Test-Path ".gh-pages") { Remove-Item -Recurse -Force ".gh-pages" }
 git fetch origin
 git worktree add -B gh-pages .gh-pages origin/gh-pages
 
-# 3) Copy dist/ into worktree
-robocopy dist .gh-pages /MIR | Out-Null
+# 3) Sanity check to prevent committing on main by mistake
+Push-Location .gh-pages
+$branch = (git rev-parse --abbrev-ref HEAD).Trim()
+if ($branch -ne "gh-pages") {
+  Pop-Location
+  throw "Worktree not on gh-pages (found '$branch'). Aborting."
+}
+Pop-Location
 
-# 4) Prevent Jekyll processing
+# 4) Copy build -> worktree
+robocopy dist .gh-pages /MIR | Out-Null
 New-Item .gh-pages\.nojekyll -ItemType File -Force | Out-Null
 
 # 5) Commit & push from inside worktree
@@ -28,5 +35,12 @@ if ($LASTEXITCODE -ne 0) { Write-Host "Nothing to commit (no changes)" }
 git push origin gh-pages
 Pop-Location
 
-# 6) Remove local worktree directory
-git worktree remove .gh-pages
+# 6) Cleanup
+if (Test-Path ".gh-pages\.git") {
+  git worktree remove .gh-pages
+} else {
+  # If worktree metadata went missing (rare), delete the folder
+  Remove-Item -Recurse -Force ".gh-pages"
+}
+
+Write-Host "✅ Deployed to gh-pages"
