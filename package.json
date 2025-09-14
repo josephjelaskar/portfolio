@@ -1,7 +1,7 @@
 {
-  "name": "my-profile",
+  "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "homepage": "https://josephjelaskar.github.io/portfolio",
   "scripts": {
@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --branch gh-pages",
+    "clean": "if exist dist rmdir /s /q dist",
+    "rebuild": "npm run clean && npm run build"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -20,7 +22,7 @@
     "@eslint/js": "^9.33.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
-    "@vitejs/plugin-react": "^5.0.0",
+    "@vitejs/plugin-react": "^5.0.2",
     "autoprefixer": "^10.4.15",
     "eslint": "^9.33.0",
     "eslint-plugin-react-hooks": "^5.2.0",
@@ -31,6 +33,6 @@
     "tailwindcss": "^3.3.3",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
-    "vite": "^7.1.2"
+    "vite": "^7.1.5"
   }
 }
