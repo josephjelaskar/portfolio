@@ -1,5 +1,6 @@
 import React from 'react';
 import headShoulderPhoto from './assets/black_suit_head_shoulder.png';
+import Timeline from "./components/Timeline";
 
 const App = () => {
   return (
